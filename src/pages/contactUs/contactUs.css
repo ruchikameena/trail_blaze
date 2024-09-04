@@ -1,0 +1,296 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.caption {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 560px;
+    background-image: url('https://media.cntraveler.com/photos/5eb18e42fc043ed5d9779733/16:9/w_4288,h_2412,c_limit/BlackForest-Germany-GettyImages-147180370.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #f1f1f1;
+}
+
+main .caption_text {
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.caption h1 {
+    font-size: 40px;
+    color: #fff;
+}
+
+.caption h2 {
+    font-size: 20px;
+    padding: 6px;
+}
+
+.connect {
+    background-color: rgba(0, 0, 0, 0.432);
+    border: none;
+    border-radius: 10px;
+    padding: 0 20px;
+    box-shadow: 4px 4px 8px rgba(236, 234, 234, 0.5);
+}
+
+.connect a {
+    text-decoration: none;
+    color: #f1f1f1c4;
+}
+
+.connect:hover {
+    cursor: pointer;
+    background-color: rgba(226, 224, 224, 0.096);
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+section {
+    padding: 60px;
+}
+
+.accordion-header:hover {
+    box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.726);
+}
+
+.contact-form-section {
+    background-image: url('https://hdwallpaperim.com/wp-content/uploads/2017/08/25/463734-artwork-dark-mountains-forest.jpg');
+    background-size: cover;
+}
+
+.contact-form-section h3 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.contact-form {
+    width: 80%;
+    margin: 50px auto;
+    color: #fff;
+    background-color: rgb(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+.top_form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.top_form .form-group {
+    width: 50%;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    background-color: rgb(255, 255, 255, 0.5);
+    width: 100%;
+    padding: 8px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.checkbox-group input {
+    height: 20px;
+}
+
+.checkbox-group {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.checkbox-group label {
+    width: 90%;
+}
+
+.checkbox-group .one {
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    width: 25%;
+    color: #333;
+    min-width: 223px;
+}
+
+/* *************** */
+.styled-checkbox {
+    display: none;
+    /* Hide the default checkbox */
+}
+
+.styled-checkbox+label {
+    position: relative;
+    padding: 10px 15px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.styled-checkbox:checked+label {
+    background-color: #333;
+    color: white;
+}
+
+textarea {
+    cursor: pointer;
+    color: #fff;
+}
+
+.submit_button {
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    background-color: #ff6347;
+    border: none;
+    cursor: pointer;
+}
+
+/* ********************** */
+.filled {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.faqs-section {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.faqs-section h3 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 30px;
+    color: #8B0000;
+    /* Dark red color for the header */
+}
+
+.accordion {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.accordion-header {
+    background-color: #444;
+    color: #fff;
+    padding: 15px 20px;
+    border: 1px solid #555;
+    cursor: pointer;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.accordion-header:hover {
+    background-color: #555;
+}
+
+.accordion-body {
+    display: none;
+    padding: 15px 20px;
+    background-color: #f9f9f9;
+    font-size: 14px;
+    color: #333;
+    border: 1px solid #ddd;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+
+}
+
+.accordion-item {
+    border-bottom: 1px solid rgb(87, 5, 5);
+    margin: 10px 0;
+}
+
+.accordion .btn {
+    font-size: 20px;
+    color: #fff;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.accordion .btn:hover {
+    color: #ddd;
+}
+
+.arrowji {
+    transition: transform 0.3s ease;
+}
+
+.arrowji.active {
+    transform: rotate(180deg);
+    /* Rotate arrow on active */
+}
+
+/* Responsive Styles */
+@media (max-width: 775px) {
+
+    .contact-form-section form,
+    .accordion,
+    .additional-info-section,
+    .testimonials-section,
+    .social-media-section,
+    .map-section {
+        padding: 0 20px;
+    }
+
+    .top_form .form-group {
+        width: 100%;
+    }
+}
+
+@media (max-width:480px) {
+    .faqs-section h3{
+        font-size: 30px;
+    }
+    .accordion-body{
+        padding: 0;
+        background: none;
+        border: none;
+    }
+    .caption h2{
+        font-size: 15px;
+    }
+    .contact-form-section,.faqs-section{
+        padding: 60px 0;
+    }
+    .contact-form,#contactForm{
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+    
+}

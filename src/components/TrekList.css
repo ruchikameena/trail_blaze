@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.trek_container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  max-width: 1500px;
+  padding: 30px;
+  background-image: url('	https://cdn.pixabay.com/photo/2013/10/02/23/03/mountains-190055_960_720.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.trek_contain {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  margin: 20px;
+}
+
+.search-bar {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.search_content {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+}
+
+.search-bar input {
+  width: 70%;
+  padding: 10px 0 10px 25px;
+  font-size: 16px;
+  color: #333;
+  background-color: rgb(255, 255, 255, 0.5);
+  font-weight: 600;
+  border: none;
+  border-radius: 10px 0 0 10px;
+}
+
+.search-bar input:focus {
+  box-shadow: 4px 4px 8px rgba(0, 0, 0);
+  outline: none;
+}
+
+.search-bar button {
+  width: 20%;
+  padding: 8px 16px;
+  font-size: 19px;
+  border: none;
+  background-color: #ff6347;
+  color: white;
+  cursor: pointer;
+  border-radius: 0 10px 10px 0;
+}
+
+.search-bar button:hover {
+  box-shadow: 4px 4px 8px rgba(0, 0, 0);
+}
+
+/* Card styles */
+.card {
+  flex: 1 1 calc(25% - 32px);
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin: 10px;
+  max-width: 25%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.card:hover .image {
+  transform: scale(1.05);
+
+}
+
+.card:hover .trekbtn {
+  background-color: #0f0e0e;
+}
+
+.card:hover {
+  box-shadow: 4px 4px 8px rgba(0, 0, 0);
+}
+
+.card .topSection {
+  text-align: center;
+  height: 150px;
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.card .topSection .image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card .middleSection {
+  padding: 10px 0;
+}
+
+.card .middleSection .title {
+  font-size: 17px;
+  font-weight: 600;
+  color: #444;
+}
+
+.card .middleSection p {
+  font-size: 14px;
+  font-weight: 700;
+  color: #666;
+  margin: 3px 0;
+}
+
+/* Button styles */
+.card .trekbtn {
+  padding: 10px;
+  width: 100%;
+  font-size: 15px;
+  text-decoration: none;
+  color: white;
+  border: none;
+  background-color: #1b1b1b;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+@media (max-width: 1200px) {
+  .card {
+    flex: 1 1 calc(33.33% - 30px);
+    max-width: 33.33%;
+  }
+}
+
+@media (max-width: 900px) {
+  .card {
+    flex: 1 1 calc(50% - 30px);
+    max-width: 50%;
+  }
+
+  .search-bar input {
+    width: 60%;
+  }
+
+  .search-bar button {
+    width: 30%;
+  }
+}
+
+@media (max-width: 600px) {
+  .trek_container {
+    width: 100%;
+    margin: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+
+  .card {
+    flex: 1 1 calc(100% - 30px);
+    max-width: 100%;
+  }
+
+  .search-bar {
+    flex-direction: column;
+  }
+
+  .search-bar input {
+    width: 100%;
+    font-size: 15px;
+    padding: 0;
+
+  }
+
+  .search-bar button {
+    width: 50%;
+  }
+}

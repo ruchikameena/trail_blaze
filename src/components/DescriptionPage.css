@@ -1,0 +1,218 @@
+.description-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.trek-name {
+  font-size: 60px;
+  text-align: left;
+  color: #000;
+}
+
+.trek-info {
+  font-size: 20px;
+  font-weight: 900;
+  color: #555;
+}
+
+.trek-info span {
+  flex: 1;
+  padding: 0 10px;
+}
+
+.side {
+  border-right: 1px solid #555;
+}
+
+/* Section 2: Trek Image */
+.section-2 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.trek-image {
+  width: 100%;
+  max-height: 80vh;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.image-slider {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  display: flex;
+  gap: 8px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 5px;
+}
+
+.slider-image {
+  width: 80px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.slider-image:hover {
+  transform: scale(1.1);
+}
+
+/* Section 3: Overview and Description */
+.section-3 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.overview {
+  width: 20%;
+  text-align: left;
+  font-size: 20px;
+  color: #ff6347;
+  padding: 0 30px;
+}
+
+.description {
+  width: 80%;
+  padding: 0 30px;
+}
+
+/* Section 4: Map and Highlights */
+.section-4 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.map {
+  flex: 1 1 70%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.map:hover {
+  transform: scale(1.02);
+}
+
+.trek-highlights {
+  padding: 30px 0;
+  background-color: #333;
+  text-align: center;
+  flex: 1 1 20%;
+}
+
+.trek-highlights h2,
+.trek-highlights h3 {
+  color: #fff;
+  font-size: 20px;
+}
+
+.trek-highlights ul {
+  list-style: none;
+}
+
+.trek-highlights li {
+  margin-bottom: 10px;
+  color: #ff6347;
+  transition: 0.2s;
+}
+
+.trek-highlights li:hover {
+  color: #7a1919;
+  cursor: pointer;
+}
+
+/* Reviews Section */
+.section-reviews {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.reviews-right {
+  flex: 1 1 65%;
+  /* Adjust width as needed */
+}
+
+.reviews-left {
+  flex: 1 1 30%;
+  /* Adjust width as needed */
+  background-color: #000000;
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.reviews-left h2 {
+  margin-bottom: 10px;
+  font-size: 40px;
+  color: #ff6347;
+  transition: 0.4s;
+}
+
+.reviews-left h2:hover {
+  cursor: pointer;
+  letter-spacing: 10px;
+}
+
+.short-quote {
+  font-style: italic;
+  color: #fff;
+  text-align: center;
+}
+
+.review {
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+}
+
+.review p {
+  color: #fff;
+}
+
+.review p strong {
+  color: #ff6347;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+  .section-1,
+  .section-3,
+  .section-4,
+  .section-reviews {
+    flex-direction: column;
+  }
+
+  .overview,
+  .description,
+  .map,
+  .trek-highlights {
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .slider-image {
+    width: 50px;
+    height: 30px;
+  }
+}

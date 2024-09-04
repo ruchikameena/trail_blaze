@@ -1,0 +1,121 @@
+.review {
+  padding: 20px;
+  background-color: #333;
+}
+
+.review_container {
+  position: relative;
+  overflow: hidden;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.review_container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 2rem;
+}
+
+.slider {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  /* Ensure the slider takes up the full width */
+}
+
+.slide-row {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+  /* Ensure the slide-row takes up the full width */
+}
+
+.slide-col {
+  min-width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 0;
+  position: relative;
+}
+
+.reviewcontent p {
+  max-width: 500px;
+  text-align: center;
+  color: #000;
+}
+
+.reviewcontent h2 {
+  text-align: center;
+}
+
+.rating i {
+  color: #FFD700;
+}
+
+.hero {
+  margin-left: 20px;
+}
+
+.hero img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  transform: translateY(-50%);
+}
+
+.arrow-left {
+  left: 10px;
+}
+
+.arrow-right {
+  right: 10px;
+}
+
+.indicator {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.btn {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: #bbb;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.btn.active {
+  background: #717171;
+}
+
+@media (max-width: 768px) {
+  .slide-col {
+    padding: 10px;
+    flex-direction: column;
+  }
+
+  .hero img {
+    width: 60px;
+    height: 60px;
+  }
+}
