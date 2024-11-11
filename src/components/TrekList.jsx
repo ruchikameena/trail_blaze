@@ -10,7 +10,7 @@ function TrekList() {
 
   useEffect(() => {
     axios
-      .get("https://trail-blaze-backend-1.onrender.com.com/api/treks")
+      .get("https://trail-blaze-backend-1.onrender.com/api/treks")
       .then((response) => {
         if (Array.isArray(response.data)) {
           setTreks(response.data);
@@ -23,7 +23,7 @@ function TrekList() {
 
   const handleSearch = () => {
     axios
-      .get("https://trail-blaze-backend-1.onrender.com.com/api/treks")
+      .get("https://trail-blaze-backend-1.onrender.com/api/treks")
       .then((response) => {
         if (Array.isArray(response.data)) {
           const filteredTreks = response.data.filter((trek) =>
