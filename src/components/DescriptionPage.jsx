@@ -10,7 +10,7 @@ function DescriptionPage() {
 
   useEffect(() => {
     axios
-      .get(`https://trail-blaze-backend.onrender.com/api/treks/${trekId}`)
+      .get(`https://trail-blaze-backend-1.onrender.com/api/treks/${trekId}`)
       .then((response) => {
         setTrek(response.data);
       })
