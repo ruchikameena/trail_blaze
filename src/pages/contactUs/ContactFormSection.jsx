@@ -45,7 +45,7 @@ const ContactForm = () => {
 
     // Send form data to the backend
     axios
-      .post("https://trail-blaze-backend.onrender.com/api/contact", formData)
+      .post("https://trail-blaze-backend-1.onrender.com/api/contact", formData)
       .then((response) => {
         console.log(response.data);
         alert("Form submitted successfully");
